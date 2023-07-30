@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+h1{
+    font-size: 2.5rem; 
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+/*Navbar*/
+nav{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 99;
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+#menu{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+#close{
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+nav .navbar ul{
+    display: flex;
+   
+}
+nav .navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navbar ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navbar ul li a{
+    text-decoration: none;
+    color: orange;
+    font-size: 16px;
+    font-weight: 500px; 
+    transition: 0.3s;   
+}
+
+nav .navbar ul li a.active,
+nav .navbar ul li a:hover{
+    color: black;
+}
+/*img*/
+.home{
+   background:url(imgs/mvr.jpg);
+   height: 100vh;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-top: 40px;
+}
+.home h2{
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    font-style: italic;
+}
+.home p{
+    color: whitesmoke;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    font-style: italic;
+    line-height: 25px;
+    width: 50%;
+}
+.home .bottm{
+    margin-top: 30px;
+}
+.home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px,35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.home a.blue{
+    color: #fff;
+    background-color: rgb(21,21,100);
+}
+.home a.blue:hover{
+    color:  rgb(240, 240, 16);
+    background-color: #fff
+}
+.home a.yellow{
+    color: #fff;
+    background-color: rgb(240, 240, 16);
+}
+.home a.yellow:hover{
+    color: rgb(21,21,100);
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.card:hover{
+    padding: 8vw 8vw, 8vw, 8vw;
+    box-shadow: 16px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 16px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 16px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+}
+.main1{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+    background-image: url(imgs/mvrs.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: 50% 50%;
+
+
+}
+.main1 h1{
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.h{
+    color: black
+}
+.news{
+    padding: 8vm 0 8vm 6vm;
+    background-color: black;
+    color: white;
+}
+.but{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.news input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline : none;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600px;
+}
+.news::placeholder{
+    color: white;
+}
+.news{
+    margin: 0;
+}
+.fab{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+}
+h2{
+    color: white;
+}
+.product{
+    padding: 8vw 8vw 8px 8vw;
+    text-align: center;
+}
+
+
+/*About home*/
+.abouthome{
+    background:url(imgs/mvr1.webp);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+ }
+ .abouthome h2{
+    color: black;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    padding-bottom: 65px;
+    font-style: italic;
+}
+#about-container{
+    display: flex;
+    align-items: center;
+    padding: 2vw 8vw 2vw 8vw;
+    text-align: center;
+}
+.trust{
+    text-align: center;
+    padding: 2vw;
+}
+.trust .trust-img{
+    width: 100%;
+    height: 100%;
+}
+
+/*about*/
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+    padding: 8vw 4vw 2vw 4vw   ;
+    text-align: center;
+}
+/*course*/
+#course {
+    display: flex;
+    align-items: center;
+}
+#course .cour{
+    padding-left: 10px;
+    text-align: center;
+}
+
+@media (max-width:830px){
+        nav {
+           
+            padding: 10px 25px;
+            
+            
+        }
+        nav img {
+            width: 100px;
+        }
+        #menu{
+           
+            display: initial;
+        }
+        #close{
+           font-size: 1.6rem;
+          
+            display: initial;
+        }
+        nav .navbar ul {
+            position: absolute;
+            top: 0;
+            right: -250px;
+            width: 200px;
+            background-color:rgba(17, 20, 104, 0.45);
+            backdrop-filter: blur(4.5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transition: 0.3s ease;
+        }
+        nav .navbar ul.active{
+            right:0;
+        }
+
+        nav .navbar ul li{
+            padding: 20px 0 20px 40px;
+            margin-left: 0;
+        }
+        nav .navbar ul li a{
+            color: white;
+        }
+        .home p {
+            color: whitesmoke;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            font-weight: 500px;
+            font-style: italic;
+            line-height: 25px;
+            width: 90%;
+        }
+        .home h2 {
+            color: white;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            font-weight: 500px;
+            font-style: italic;
+            padding: 0;
+        }
+        .py-5 {
+            padding-top: 3rem!important;
+            padding-bottom: 3rem!important;
+            text-align: center;
+        }
+        .main1 {
+            
+            text-align: center;
+            background-image: url(imgs/mvrs.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            background-position: 50% 50%;
+        }
+}
